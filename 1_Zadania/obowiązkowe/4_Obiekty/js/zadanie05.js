@@ -31,3 +31,19 @@ var animals = [
     }
 
 ]
+
+console.log('Zadanie 5:');
+
+for (i = 0; i<animals.length; i++){
+    for (let key in animals[i]){
+        if (typeof(animals[i][key]) != "object"){
+        console.log(key + " -> " + animals[i][key]);}
+        else {
+            console.log(key + " : ");
+            for (let val in animals[i][key])
+                 for (let element in animals[i][key][val]){
+                 console.log(element + " -> " + animals[i][key][val][element]);
+            }
+        }
+    }
+}
