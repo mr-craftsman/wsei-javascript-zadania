@@ -5,21 +5,23 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+//function below uses JS array method - sort.
 function sortArray() {
 
-    //Twoj komentarz ...
+    //an array to use method on is declared within function, just for example
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    //method sort is used on array declared above, it has two anon parameters, by it will work
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        //function compares values by a declared parameters pattern - here in rising order
         return a - b;
     });
 
-    //Twoj komentarz ...
+    //function returns sorted array
     return points;
 }
 
-//Twoj komentarz ...
+//function call
 sortArray();
+//console debugging
+console.log(sortArray());

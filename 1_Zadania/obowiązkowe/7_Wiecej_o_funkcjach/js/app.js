@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//global function with void parameters
 function jeden() {
 
-    //Twoj komentarz ...
+    //declares a variable, to which has access
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //global function above has a method, another function, no parameters
     function dwa() {
 
-        //Twoj komentarz ...
+        //method above uses variable declared at the same scope, therfore, it works
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //variable below is one scope deeper, it`s "private" let`s say
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //function call that demands access to a variable out of scope
     dwa();
 
-    //Twoj komentarz ...
+    //reference to a variable out of scope, will not work
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//function call will end with result regarding only it`s scope, zamienna2 variable should be declared globally, or within jeden scope
 jeden()
