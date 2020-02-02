@@ -19,10 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function innerFuncOne() {
       // Tutaj this wskazuje na element Window, bo funkcja została
       //wywołana bez żadnego kontekstu.
+          //b.style.backgroundColor = "blue";
       console.log("innerFuncOne: ", this);
     }
     innerFuncOne();
-
+          //might also pass b as an argument, with changing params of innerFunc
   });
 
 })
+//HTML file does not have script reference
